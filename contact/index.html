@@ -23,23 +23,53 @@
     Email:
     <input name="email" type="email">
   </label>
-  <br><br> 
 
   <label>
     Subject:
     <input name="subject">
   </label>
-  <br><br>
 
   <label>
     Body:
-    <textarea name="body" rows="5" cols="25"></textarea>
+    <textarea name="body" rows="5"></textarea>
   </label>
-  <br><br>
 
   <button>Submit</button>
 
 </form>
+
+<style>
+  form {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    gap: 1em;
+  }
+
+  label {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;      
+    margin-block: 0.5em;
+    font: inherit;
+  }
+
+  input, textarea, button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font: inherit;
+  }
+
+  /* 
+  label span {
+    align-self: center;
+  }
+  */
+
+  button {
+    grid-column: 1 / -1;
+  }
+</style>
     
 </body>
 </html>
