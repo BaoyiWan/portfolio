@@ -4,18 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            max-width: 100ch; 
+            margin-inline: max(1em, (100% - 100ch) / 2); 
+        }
+    </style>
 </head>
 <body>
 
 <nav>
-    <a href="../index.html">Home</a>
-    <a href="../projects/">Projects</a>
-    <a href="../contact/">Contact</a>
-    <a href="../cv/">CV</a>
-    <a href="https://github.com/BaoyiWan" target="_blank">Profile</a>
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../projects/" class="current">Projects</a></li>
+    <li><a href="../contact/">Contact</a></li>
+    <li><a href="../cv/">CV</a></li>
+    <li><a href="https://github.com/BaoyiWan" target="_blank">Profile</a></li>
+  </ul>
 </nav>
 
+
+<style>
+  :root {
+    --color-accent: oklch(65% 50% 0);
+  }
+  html {
+    accent-color: var(--color-accent);
+  }
+  nav { 
+    display: flex;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid oklch(80% 3% 200); 
+  }
+  nav ul, nav li { 
+    display: contents; 
+  }
+  nav a { 
+    flex: 1; 
+    text-decoration: none;     
+    color: inherit;            
+    text-align: center;         
+    padding: 0.5em; 
+  }
+  nav a.current {
+    border-bottom: 0.4em solid oklch(80% 3% 200);
+    padding-bottom: 0.1em;     
+  }
+  nav a:hover {
+    border-bottom: 0.4em solid var(--color-accent);
+    padding-bottom: 0.1em;
+  }
+</style>
+
 <h1>Projects</h1>
+
+<div class="projects">
+    <article>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugit blanditiis veritatis corporis architecto aut illo quae, dignissimos voluptatem reiciendis ad debitis. Dicta aperiam neque veniam vel suscipit, odio itaque.</p>
+    </article>
+    <article>
+        <h2>Earum delectus accusamus aperiam.</h2>
+        <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
+        <p>Aperiam sit dolore ipsam minima eligendi perspiciatis ipsa, asperiores nemo voluptates sapiente aliquam ratione laudantium ullam tempore praesentium. Aut nam officiis perspiciatis magni deserunt laborum voluptates eos fugit tenetur quaerat.</p>
+    </article>
+    <article>
+        <h2>Excepturi ut veniam iste!</h2>
+        <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
+        <p>Sequi non quisquam quibusdam adipisci, totam, vero distinctio expedita, ea iusto exercitationem numquam dolorum culpa delectus officia quae aut quis. Maiores dolorum vitae eaque dicta id quia, sed enim doloribus?</p>
+    </article>
+    <article>
+        <h2>Nihil itaque fugit adipisci?</h2>
+        <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
+        <p>Accusamus aut harum laborum et! Quod, mollitia quos consequatur, excepturi eius impedit reprehenderit iusto fugiat, in expedita odit iste beatae a! Earum, eius dolor. Perspiciatis odio omnis illo alias asperiores?</p>
+    </article>
+    <article>
+        <h2>Commodi reiciendis ab assumenda?</h2>
+        <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
+        <p>Fuga accusantium dolores rerum iusto saepe possimus modi deserunt illo doloribus natus, perspiciatis labore similique laudantium velit consectetur enim minus tenetur earum totam praesentium culpa aliquam deleniti eius. Corporis, distinctio!</p>
+    </article>
+    <article>
+        <h2>Dolorum saepe quod similique.</h2>
+        <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
+        <p>Neque suscipit iure eaque dicta unde! Facilis consequuntur iure aut ipsum sequi repudiandae quibusdam esse quis harum ullam ratione, culpa ad ipsa officiis alias tempora, a molestias. Provident, accusamus at.</p>
+    </article>
+    <article>
+        <h2>Quas error hic id.</h2>
+        <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
+        <p>Quos repellat quaerat doloribus, illo dolor, dicta dolorem a at reprehenderit ratione similique totam unde maxime cum voluptatum ut, asperiores pariatur nostrum ipsa numquam culpa ex necessitatibus? Ab, nihil assumenda.</p>
+    </article>
+    <article>
+        <h2>Fuga numquam quia molestiae.</h2>
+        <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
+        <p>Temporibus officiis magni quis quia recusandae. Officiis asperiores praesentium veniam, tempora doloribus labore! Laudantium, dicta officia aperiam excepturi ratione nostrum rerum voluptatem eligendi maxime quibusdam facilis animi pariatur, exercitationem ullam.</p>
+    </article>
+    <article>
+        <h2>Provident nemo reiciendis dolore!</h2>
+        <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
+        <p>Ut aperiam veritatis quaerat quos commodi inventore veniam dolore expedita, reiciendis illum dignissimos vitae rerum odit vel incidunt beatae quibusdam iste modi vero. Dolorum quos ullam incidunt reiciendis. Adipisci, totam?</p>
+    </article>
+    <article>
+        <h2>Necessitatibus reiciendis voluptate dolor!</h2>
+        <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
+        <p>Expedita numquam ut laboriosam. Reiciendis aspernatur consequatur esse error dolor, magnam, praesentium deserunt aut eaque vero recusandae sapiente iste cum deleniti eius sunt vel commodi? Non id in ipsam dicta?</p>
+    </article>
+    <article>
+        <h2>Assumenda repudiandae rem nostrum.</h2>
+        <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
+        <p>Officia, nisi recusandae, earum aspernatur ad voluptate ut tempora modi maiores praesentium ab hic. Beatae hic explicabo earum dolore illum, cupiditate dolores provident nisi doloribus esse dignissimos incidunt obcaecati nobis.</p>
+    </article>
+    <article>
+        <h2>Sunt obcaecati rem autem!</h2>
+        <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
+        <p>Delectus laborum odit labore cum adipisci quam sit tenetur repudiandae distinctio, ut architecto libero consequuntur tempore maxime amet suscipit dignissimos blanditiis enim possimus neque veniam? Nemo adipisci at delectus nisi.</p>
+    </article>
+</div>
+
+<style>
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+        gap: 1em;
+    }
+    .projects article {
+        display: grid;
+        grid-template-rows: subgrid;
+        grid-row: span 3;
+        gap: 1em;
+    }
+    .projects h2 {
+        margin: 0; 
+    }
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1.1;
+        text-wrap: balance; 
+    }
+
+    h1 {
+        font-size: 200%; 
+    }
+</style>
 
 </body>
 </html>
