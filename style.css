@@ -4,3 +4,31 @@ body {
 	 */
   font: 100%/1.5 system-ui;
 }
+
+:root {
+  --color-accent: oklch(65% 50% 0);
+}
+
+html {
+  color-scheme: light dark;
+}
+
+nav {
+  /* Define the variable */
+  --border-color: oklch(50% 10% 200 / 40%);
+  border-bottom-color: var(--border-color);
+}
+nav a:hover {
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
+}
+
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+}
+
+.color-scheme select {
+  font-family: inherit;
+}
