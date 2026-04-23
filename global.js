@@ -118,7 +118,6 @@ export async function fetchJSON(url) {
     console.log(response);
     const data = await response.json();
     return data;
-
   } catch (error) {
     console.error('Error fetching or parsing JSON data:', error);
   }
@@ -135,4 +134,8 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
     `;
     containerElement.appendChild(article);
   });
+}
+
+export async function fetchGitHubData(username) {
+  return fetchJSON(`https://api.github.com/users/BaoyiWan`);
 }
