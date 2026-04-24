@@ -126,11 +126,11 @@ export async function fetchJSON(url) {
 
 export function renderProjects(projects, containerElement, headingLevel = 'h2') {
   containerElement.innerHTML = '';
-  //const base = window.location.pathname.includes('/projects/') ? '../' : './';
-
+  const base = window.location.pathname.includes('/projects/') ? '../' : './';  //I write the code just because environment different for my live server and github webpage
+//"../" for image of github and "./" for image of live server
   projects.forEach(project => {
     const article = document.createElement('article');
-	const imagePath = base + project.image;
+	const imagePath = base + project.image; //different environment for base and github page
     article.innerHTML = `
       <${headingLevel}>${project.title}</${headingLevel}>
       ${project.year ? `<p>${project.year}</p>` : ''}
