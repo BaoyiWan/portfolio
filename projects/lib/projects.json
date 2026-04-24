@@ -2,31 +2,31 @@
     {
         "title": "DSC 106 Project 1",
         "year": "2026",
-        "image": "/images/project1.png",
+        "image": "../images/project1.png",
         "description": "In this project, I want to examine the relationship between price per calories of main baby food brands (brands that contains at least 10 products) and nutrition score for different processing level."
     },
     {
         "title": "DSC 106 Project 2 Proposition 1",
         "year": "2026",
-        "image": "/images/project2_prop1.png",
+        "image": "../images/project2_prop1.png",
         "description": "The proposition 1 in project 2 want to convince readers that a higher GDP Purchasing Power Parity per Capita results in better health or longer life expectancy."
     },
     {
         "title": "DSC 106 Project 2 Proposition 2",
         "year": "2026",
-        "image": "/images/project2_prop2.png",
+        "image": "../images/project2_prop2.png",
         "description": "The proposition 2 is that we want to show female life expectancy is consistently higher than male life expectancy across all income groups."
     },
     {
         "title": "DSC 106 Project 2 Against Proposition 1",
         "year": "2026",
-        "image": "/images/project2_against_prop1.png",
+        "image": "../images/project2_against_prop1.png",
         "description": "For disproving the proposition 1, we graph the data in a similar way, but now we are trying to convince readers that for countries with similar economic growth, life expectancy, gains vary widely, implying that economic growth alone is not a reliable indicator of health improvements."
     },
     {
         "title": "DSC 106 Project 2 Against Proposition 2",
         "year": "2026",
-        "image": "/images/project2_against_prop2.png",
+        "image": "../images/project2_against_prop2.png",
         "description": "For disproving the proposition 2, we reframe the data by plotting the difference in life expectancy instead of raw values, suggesting that gender differences vary and are not solely determined by income level."
     },
     {
@@ -38,43 +38,43 @@
     {
         "title": "MATH 189 Project",
         "year": "2026",
-        "image": "/images/scatterplot_predictors_vs_crim.png",
+        "image": "../images/scatterplot_predictors_vs_crim.png",
         "description": "In this plot, I plot the scatterplots of each possible variables versus criminal activity to see if certain variables have a relationship to the criminal rate."
     },
     {
         "title": "SPURS BNN Classification Loss Surface",
         "year": "2025",
-        "image": "/images/BNN_loss_surface_classification.png",
+        "image": "../images/BNN_loss_surface_classification.png",
         "description": "I first use AutoML BNN to find best hyperparameters for optimizing BNN Loss surface and optimization path for classification test. Then I evaluate loss change of model to reveal optimization process through loss surface."
     },
     {
         "title": "SPURS BNN Classification Loss and Accuracy Plot",
         "year": "2025",
-        "image": "/images/loss_accuracy_plot_classification.png",
+        "image": "../images/loss_accuracy_plot_classification.png",
         "description": "I plot the Loss and accuracy plot for classification test to evaluate loss and accuracy for training and validation data."
     },
     {
         "title": "SPURS BNN Classification M-PHATE",
         "year": "2025",
-        "image": "/images/mphate_classification.png",
+        "image": "../images/mphate_classification.png",
         "description": "I try to combine BNN with M-PHATE for classification to show high dimensional neurons activation and 3D visualization structures of intraslice and interslice."
     },
     {
         "title": "SPURS BNN Regression Loss Surface",
         "year": "2025",
-        "image": "/images/BNN_loss_surface_regression.png",
+        "image": "../images/BNN_loss_surface_regression.png",
         "description": "Similar to the classification, but now I do the test for regression by using a different dataset."
     },
     {
         "title": "SPURS BNN Regression Loss Plot",
         "year": "2025",
-        "image": "/images/loss_plot_regression.png",
+        "image": "../images/loss_plot_regression.png",
         "description": "Different to the classification test that I need to plot both loss plot and accuracy plot, only loss plot for regression since accuracy plot is binary."
     },
     {
         "title": "SPURS BNN Regression M-PHATE",
         "year": "2025",
-        "image": "/images/mphate_regression.png",
+        "image": "../images/mphate_regression.png",
         "description": "I plot the M-PHATE graph by using BNN with regression instead."
     }
 ]
