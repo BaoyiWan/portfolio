@@ -1,63 +1,81 @@
 [
     {
         "title": "DSC 106 Project 1",
-        "image": "./images/project1.png",
+        "year": "2026",
+        "image": "/images/project1.png",
         "description": "In this project, I want to examine the relationship between price per calories of main baby food brands (brands that contains at least 10 products) and nutrition score for different processing level."
     },
     {
-        "title": "Earum delectus accusamus aperiam.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Aperiam sit dolore ipsam minima eligendi perspiciatis ipsa, asperiores nemo voluptates sapiente aliquam ratione laudantium ullam tempore praesentium. Aut nam officiis perspiciatis magni deserunt laborum voluptates eos fugit tenetur quaerat."
+        "title": "DSC 106 Project 2 Proposition 1",
+        "year": "2026",
+        "image": "/images/project2_prop1.png",
+        "description": "The proposition 1 in project 2 want to convince readers that a higher GDP Purchasing Power Parity per Capita results in better health or longer life expectancy."
     },
     {
-        "title": "Excepturi ut veniam iste!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Sequi non quisquam quibusdam adipisci, totam, vero distinctio expedita, ea iusto exercitationem numquam dolorum culpa delectus officia quae aut quis. Maiores dolorum vitae eaque dicta id quia, sed enim doloribus?"
+        "title": "DSC 106 Project 2 Proposition 2",
+        "year": "2026",
+        "image": "/images/project2_prop2.png",
+        "description": "The proposition 2 is that we want to show female life expectancy is consistently higher than male life expectancy across all income groups."
     },
     {
-        "title": "Nihil itaque fugit adipisci?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Accusamus aut harum laborum et! Quod, mollitia quos consequatur, excepturi eius impedit reprehenderit iusto fugiat, in expedita odit iste beatae a! Earum, eius dolor. Perspiciatis odio omnis illo alias asperiores?"
+        "title": "DSC 106 Project 2 Against Proposition 1",
+        "year": "2026",
+        "image": "/images/project2_against_prop1.png",
+        "description": "For disproving the proposition 1, we graph the data in a similar way, but now we are trying to convince readers that for countries with similar economic growth, life expectancy, gains vary widely, implying that economic growth alone is not a reliable indicator of health improvements."
     },
     {
-        "title": "Commodi reiciendis ab assumenda?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Fuga accusantium dolores rerum iusto saepe possimus modi deserunt illo doloribus natus, perspiciatis labore similique laudantium velit consectetur enim minus tenetur earum totam praesentium culpa aliquam deleniti eius. Corporis, distinctio!"
+        "title": "DSC 106 Project 2 Against Proposition 2",
+        "year": "2026",
+        "image": "/images/project2_against_prop2.png",
+        "description": "For disproving the proposition 2, we reframe the data by plotting the difference in life expectancy instead of raw values, suggesting that gender differences vary and are not solely determined by income level."
     },
     {
-        "title": "Dolorum saepe quod similique.",
+        "title": "DSC 106 Project 3",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Neque suscipit iure eaque dicta unde! Facilis consequuntur iure aut ipsum sequi repudiandae quibusdam esse quis harum ullam ratione, culpa ad ipsa officiis alias tempora, a molestias. Provident, accusamus at."
     },
     {
-        "title": "Quas error hic id.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Quos repellat quaerat doloribus, illo dolor, dicta dolorem a at reprehenderit ratione similique totam unde maxime cum voluptatum ut, asperiores pariatur nostrum ipsa numquam culpa ex necessitatibus? Ab, nihil assumenda."
+        "title": "MATH 189 Project",
+        "year": "2026",
+        "image": "/images/scatterplot_predictors_vs_crim.png",
+        "description": "In this plot, I plot the scatterplots of each possible variables versus criminal activity to see if certain variables have a relationship to the criminal rate."
     },
     {
-        "title": "Fuga numquam quia molestiae.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Temporibus officiis magni quis quia recusandae. Officiis asperiores praesentium veniam, tempora doloribus labore! Laudantium, dicta officia aperiam excepturi ratione nostrum rerum voluptatem eligendi maxime quibusdam facilis animi pariatur, exercitationem ullam."
+        "title": "SPURS BNN Classification Loss Surface",
+        "year": "2025",
+        "image": "/images/BNN_loss_surface_classification.png",
+        "description": "I first use AutoML BNN to find best hyperparameters for optimizing BNN Loss surface and optimization path for classification test. Then I evaluate loss change of model to reveal optimization process through loss surface."
     },
     {
-        "title": "Provident nemo reiciendis dolore!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Ut aperiam veritatis quaerat quos commodi inventore veniam dolore expedita, reiciendis illum dignissimos vitae rerum odit vel incidunt beatae quibusdam iste modi vero. Dolorum quos ullam incidunt reiciendis. Adipisci, totam?"
+        "title": "SPURS BNN Classification Loss and Accuracy Plot",
+        "year": "2025",
+        "image": "/images/loss_accuracy_plot_classification.png",
+        "description": "I plot the Loss and accuracy plot for classification test to evaluate loss and accuracy for training and validation data."
     },
     {
-        "title": "Necessitatibus reiciendis voluptate dolor!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Expedita numquam ut laboriosam. Reiciendis aspernatur consequatur esse error dolor, magnam, praesentium deserunt aut eaque vero recusandae sapiente iste cum deleniti eius sunt vel commodi? Non id in ipsam dicta?"
+        "title": "SPURS BNN Classification M-PHATE",
+        "year": "2025",
+        "image": "/images/mphate_classification.png",
+        "description": "I try to combine BNN with M-PHATE for classification to show high dimensional neurons activation and 3D visualization structures of intraslice and interslice."
     },
     {
-        "title": "Assumenda repudiandae rem nostrum.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Officia, nisi recusandae, earum aspernatur ad voluptate ut tempora modi maiores praesentium ab hic. Beatae hic explicabo earum dolore illum, cupiditate dolores provident nisi doloribus esse dignissimos incidunt obcaecati nobis."
+        "title": "SPURS BNN Regression Loss Surface",
+        "year": "2025",
+        "image": "/images/BNN_loss_surface_regression.png",
+        "description": "Similar to the classification, but now I do the test for regression by using a different dataset."
     },
     {
-        "title": "Sunt obcaecati rem autem!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Delectus laborum odit labore cum adipisci quam sit tenetur repudiandae distinctio, ut architecto libero consequuntur tempore maxime amet suscipit dignissimos blanditiis enim possimus neque veniam? Nemo adipisci at delectus nisi."
+        "title": "SPURS BNN Regression Loss Plot",
+        "year": "2025",
+        "image": "/images/loss_plot_regression.png",
+        "description": "Different to the classification test that I need to plot both loss plot and accuracy plot, only loss plot for regression since accuracy plot is binary."
+    },
+    {
+        "title": "SPURS BNN Regression M-PHATE",
+        "year": "2025",
+        "image": "/images/mphate_regression.png",
+        "description": "I plot the M-PHATE graph by using BNN with regression instead."
     }
 ]
 

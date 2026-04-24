@@ -32,3 +32,15 @@ nav a:hover {
 .color-scheme select {
   font-family: inherit;
 }
+.projects img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.project-year {
+    font-size: 0.9em;
+    margin: 0;
+}
+
