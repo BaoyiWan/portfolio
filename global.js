@@ -123,19 +123,25 @@ export async function fetchJSON(url) {
   }
 }
 
+
 export function renderProjects(projects, containerElement, headingLevel = 'h2') {
   containerElement.innerHTML = '';
-  projects.forEach(project => { 
+  projects.forEach(project => {
     const article = document.createElement('article');
+    const base = window.location.pathname.includes('/projects/') ? '../' : './';
+    const imagePath = base + project.image;
+
     article.innerHTML = `
-      <${headingLevel}>${project.title}</${headingLevel}> 
-      <p class="project-year">${project.year}</p>
-      <img src="${project.image}" alt="${project.title}">
+      <${headingLevel}>${project.title}</${headingLevel}>
+      ${project.year ? `<p>${project.year}</p>` : ''}
+      <img src="${imagePath}" alt="${project.title}">
       <p>${project.description}</p>
     `;
+
     containerElement.appendChild(article);
   });
 }
+
 
 export async function fetchGitHubData(username) {
   return fetchJSON(`https://api.github.com/users/BaoyiWan`);

@@ -1,5 +1,5 @@
 import { fetchJSON, renderProjects } from '../global.js';
-const projects = await fetchJSON('./lib/projects.json');
+const projects = await fetchJSON('../lib/projects.json');
 //GPUDeviceLostInfo.console(projects)
 const titleElement = document.querySelector('.projects-title');
 titleElement.textContent = `Projects (${projects.length})`;
