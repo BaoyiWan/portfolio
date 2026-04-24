@@ -126,14 +126,10 @@ export async function fetchJSON(url) {
 
 export function renderProjects(projects, containerElement, headingLevel = 'h2') {
   containerElement.innerHTML = '';
-  const base = window.location.pathname.includes('/projects/') ? '../' : './';
+  //const base = window.location.pathname.includes('/projects/') ? '../' : './';
 
   projects.forEach(project => {
     const article = document.createElement('article');
-    const imagePath = project.image.startsWith('http') //can remove after implementing project3
-      ? project.image
-      : base + project.image;
-
     article.innerHTML = `
       <${headingLevel}>${project.title}</${headingLevel}>
       ${project.year ? `<p>${project.year}</p>` : ''}
