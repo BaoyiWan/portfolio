@@ -1,8 +1,8 @@
 [
     {
-        "title": "Lorem ipsum dolor sit.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugit blanditiis veritatis corporis architecto aut illo quae, dignissimos voluptatem reiciendis ad debitis. Dicta aperiam neque veniam vel suscipit, odio itaque."
+        "title": "DSC 106 Project 1",
+        "image": "./images/project1.png",
+        "description": "In this project, I want to examine the relationship between price per calories of main baby food brands (brands that contains at least 10 products) and nutrition score for different processing level."
     },
     {
         "title": "Earum delectus accusamus aperiam.",
