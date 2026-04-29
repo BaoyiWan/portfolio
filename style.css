@@ -32,6 +32,7 @@ nav a:hover {
 .color-scheme select {
   font-family: inherit;
 }
+
 .projects img {
     width: 100%;
     height: auto;
@@ -41,6 +42,9 @@ nav a:hover {
 
 .project-year {
     font-size: 0.9em;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, serif;
+    font-variant-numeric: oldstyle-nums; /*why the style does not work????*/
+    font-feature-settings: "onum";
     margin: 0;
 }
 
