@@ -60,14 +60,22 @@
 
 <h1 class="projects-title">Projects</h1>
 
-<div class="container"  style="display: flex; align-items: center; gap: 20px;"> <!--???-->>
+<!--
+<div class="container"  style="display: flex; align-items: center; gap: 20px;">
     <svg id="projects-plot" viewBox="-50 -50 100 100">
-    <!--
+    
         <circle cx="0" cy="0" r="50" fill="red" />
-        <path d="M -50 0 A 50 50 0 0 1 50 0 A 50 50 0 0 1 -50 0" fill="red" />???-->
+        <path d="M -50 0 A 50 50 0 0 1 50 0 A 50 50 0 0 1 -50 0" fill="red" />
     </svg>
 
-    <ul class="legend"></ul> <!--nothing to add inside????-->
+    
+</div>
+-->
+<div class="container"  style="display: flex; align-items: center; gap: 20px;">
+    <svg id="projects-pie-plot" viewBox="-50 -50 100 100">
+  
+    </svg>
+    <ul class="legend"></ul> 
 </div>
 
 <input
@@ -150,27 +158,29 @@
 <style>
     .projects {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
         gap: 1em;
     }
-
-    #projects-pie-plot { /*why the pie plot is so big???*/
+/*
+    #projects-pie-plot { 
         max-width: 20em;
         margin-block: 2em;
 
         overflow: visible;
     }
-    #projects-plot:has(path:hover) { /*target svg????*/
+    
+    #projects-plot:has(path:hover) { 
         path:not(:hover) {
             opacity: 0.5;
         }
     }
 
-
     #projects-plot path {
         cursor: pointer;
         transition: 300ms; 
     }
+*/
+   
 
     /* .selected {
         --color: oklch(60% 45% 0) !important;
@@ -178,14 +188,15 @@
         &:is(path) { 
             fill: var(--color);
         }
-    } ???*/
+    } ???
     #projects-plot path.selected {
         fill: oklch(60% 45% 0);
     }
-
+*/
     .legend {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+        flex: 1;   
         gap: 10px;
         padding: 0;
     }
@@ -221,13 +232,7 @@
         flex-direction: column;
         gap: 0.5em;
     }
-    .project-year {
-        font-size: 0.9em;
-        font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, serif;
-        font-variant-numeric: oldstyle-nums;
-        font-feature-settings: "onum";
-        margin: 0;
-    }
+
     .projects h2 {
         margin: 0; 
     }

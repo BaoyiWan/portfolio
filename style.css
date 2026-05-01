@@ -42,9 +42,37 @@ nav a:hover {
 
 .project-year {
     font-size: 0.9em;
-    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, serif;
-    font-variant-numeric: oldstyle-nums; /*why the style does not work????*/
-    font-feature-settings: "onum";
+    font-family: "Baskerville", serif;
+    font-variant-numeric: oldstyle-nums;
     margin: 0;
 }
+
+#projects-pie-plot {
+        max-width: 20em;
+        margin-block: 2em;
+
+        overflow: visible;
+}
+
+&:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+
+path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
+}
+
+
+
 
