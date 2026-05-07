@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            max-width: 100ch; 
+            margin-inline: max(1em, (100% - 100ch) / 2); 
+        }
+    </style>
+</head>
+
+<body>
+
+<style>
+  :root {
+    --color-accent: oklch(65% 50% 0);
+  }
+  html {
+    accent-color: var(--color-accent);
+  }
+  nav { 
+    display: flex;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid oklch(80% 3% 200); 
+  }
+  nav ul, nav li { 
+    display: contents; 
+  }
+  nav a { 
+    flex: 1; 
+    text-decoration: none;     
+    color: inherit;            
+    text-align: center;         
+    padding: 0.5em; 
+  }
+  nav a.current {
+    border-bottom: 0.4em solid oklch(80% 3% 200);
+    padding-bottom: 0.1em;     
+  }
+  nav a:hover {
+    border-bottom: 0.4em solid var(--color-accent);
+    padding-bottom: 0.1em;
+  }
+</style>
+
+<h1>Meta</h1>
+<h1 class="summary-title">Summary</h1>
+<div id="stats"></div>
+
+
+<h2>Commits by time of day</h2>
+<div id="chart"></div>
+
+
+<dl id="commit-tooltip" class="info tooltip" hidden>
+  <dt>Commit</dt>
+  <dd>
+    <a href="" id="commit-link" target="_blank"></a>
+  </dd>
+
+  <dt>Date</dt>
+  <dd id="commit-date"></dd>
+
+  <!-- Add: Time, author, lines edited-->
+  <dt>Time</dt>
+  <dd id="commit-time"></dd>
+
+  <dt>Author</dt>
+  <dd id="commit-author"></dd>
+
+  <dt>Lines Edited</dt>
+  <dd id="commit-lines"></dd>
+</dl>
+
+<p id="selection-count">No commits selected</p> <!--directly add???-->
+<dl id="language-breakdown" class="stats"></dl>
+
+
+<script src="main.js" type="module"></script>
+<script src="../global.js" type="module"></script>
+</body>
+</html>
+
