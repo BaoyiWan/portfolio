@@ -125,7 +125,10 @@ function renderScatterPlot(data, commits) {
   .range([0, width])
   .nice();
 
-  yScale = d3.scaleLinear().domain([0, 24]).range([height, 0])
+  yScale = d3.scaleLinear()
+  .domain([0, 25])
+  //.domain([0, 24])
+  .range([height, 0])
   //what if commit.hourFrac??? .domain(d3.extent(data, d => d.hourFrac))????
   
   // Update scales with new ranges
@@ -183,7 +186,8 @@ function renderScatterPlot(data, commits) {
   const gridlines = svg
   .append('g')
   .attr('class', 'gridlines')
-  .attr('transform', `translate(${usableArea.left}, 0)`);
+  .attr('transform', `translate(${usableArea.left}, 0)`)
+  .style('opacity', 0.2);
 
   // Create gridlines as an axis with no labels and full-width ticks
   gridlines.call(d3.axisLeft(yScale).tickFormat('').tickSize(-usableArea.width));
