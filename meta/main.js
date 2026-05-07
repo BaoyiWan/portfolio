@@ -179,11 +179,6 @@ function renderScatterPlot(data, commits) {
   .call(yAxis);
 
 
-   svg
-  .append('g')  //revise2?????
-  .attr('class', 'brush')
-  .call(createBrushSelector);
-
   // Add gridlines BEFORE the axes
   const gridlines = svg
   .append('g')
@@ -192,6 +187,11 @@ function renderScatterPlot(data, commits) {
 
   // Create gridlines as an axis with no labels and full-width ticks
   gridlines.call(d3.axisLeft(yScale).tickFormat('').tickSize(-usableArea.width));
+  
+  svg
+  //.append('svg')  //revise2?????
+  .attr('class', 'brush')
+  .call(createBrushSelector);
 }
 
 function renderTooltipContent(commit) {
@@ -225,11 +225,11 @@ function updateTooltipPosition(event) {
   tooltip.style.top = `${event.clientY}px`;
 }
 
-function createBrushSelector(g) { //revise3?????
-  g.call(d3.brush().on('start brush end', brushed));
+function createBrushSelector(svg) { //revise3?????
+  svg.call(d3.brush().on('start brush end', brushed));
 
   // Raise dots and everything after overlay
-  g.selectAll('.dots, .overlay ~ *').raise();
+  svg.selectAll('.dots, .overlay ~ *').raise();
 }
 
 function brushed(event) {
