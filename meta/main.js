@@ -68,7 +68,7 @@ function renderCommitInfo(data, commits) {
   dl.append('dt').text('Total commits');
   dl.append('dd').text(commits.length);
 
-  // Add more stats as needed... add whatever I want?????
+  // Add more stats as needed... 
    //Number of files 
   const numFiles = d3.group(data, d => d.file).size;
   dl.append('dt').text('Number of files');
@@ -119,7 +119,7 @@ function renderScatterPlot(data, commits) {
   .attr('viewBox', `0 0 ${width} ${height}`)
   .style('overflow', 'visible');
 
-  xScale = d3  //remove const???
+  xScale = d3  
   .scaleTime()
   .domain(d3.extent(commits, (d) => d.datetime))
   .range([0, width])
@@ -129,7 +129,6 @@ function renderScatterPlot(data, commits) {
   .domain([0, 25])
   //.domain([0, 24])
   .range([height, 0])
-  //what if commit.hourFrac??? .domain(d3.extent(data, d => d.hourFrac))????
   
   // Update scales with new ranges
   xScale.range([usableArea.left, usableArea.right]);
@@ -143,7 +142,7 @@ function renderScatterPlot(data, commits) {
   .join('circle')
   .attr('cx', (d) => xScale(d.datetime))
   .attr('cy', (d) => yScale(d.hourFrac))
-  // .attr('r', 5)//??? replace???
+  // .attr('r', 5)
   .attr('r', (d) => rScale(d.totalLines))
   .attr('fill', 'steelblue')
   .style('fill-opacity', 0.7) // Add transparency for overlapping dots
@@ -193,7 +192,7 @@ function renderScatterPlot(data, commits) {
   gridlines.call(d3.axisLeft(yScale).tickFormat('').tickSize(-usableArea.width));
   
   svg
-  //.append('svg')  //revise2?????
+  //.append('svg')  //revise2
   .attr('class', 'brush')
   .call(createBrushSelector);
 }
@@ -229,7 +228,7 @@ function updateTooltipPosition(event) {
   tooltip.style.top = `${event.clientY}px`;
 }
 
-function createBrushSelector(svg) { //revise3?????
+function createBrushSelector(svg) { //revise3
   svg.call(d3.brush().on('start brush end', brushed));
 
   // Raise dots and everything after overlay
@@ -241,7 +240,7 @@ function brushed(event) {
   d3.selectAll('circle').classed('selected', (d) =>
     isCommitSelected(selection, d),
   );
-  console.log(event);//why so many lines for one brush???
+  //console.log(event);//why so many lines for one brush???
   renderSelectionCount(selection);
   renderLanguageBreakdown(selection);
 }

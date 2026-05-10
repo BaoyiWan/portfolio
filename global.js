@@ -131,13 +131,21 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
 //"../" for image of github and "./" for image of live server
   projects.forEach(project => {
     const article = document.createElement('article');
-	const imagePath = base + project.image; //different environment for base and github page
+	  const imagePath = base + project.image; //different environment for base and github page
     article.innerHTML = `
       <${headingLevel}>${project.title}</${headingLevel}>
-      ${project.year ? `<p>${project.year}</p>` : ''}
+      
       <img src="${imagePath}" alt="${project.title}">
       <p>${project.description}</p>
     `;
+    //${project.year ? `<p>${project.year}</p>` : ''}
+    if (project.year) {
+      const years = document.createElement('p');
+      years.textContent = project.year;
+      years.classList.add('project-year'); // Applies your CSS class
+      article.appendChild(years);
+    }
+
 
     containerElement.appendChild(article);
   });
