@@ -30,6 +30,18 @@
         "description": "For disproving the proposition 2, we reframe the data by plotting the difference in life expectancy instead of raw values, suggesting that gender differences vary and are not solely determined by income level."
     },
     {
+        "title": "DSC 106 Project 3 Map",
+        "year": "2026",
+        "image": "images/USmap.png",
+        "description": "In this project, we made a d3 map for the United States and extracted the data of cropland and precipitation layer from NASA MODIS in the United States mainland. Then, we visualize the overlap part of two layers by filtering cropland density, overall precipitation, rain and snow proxy. Then we separate the cropland into non-agricultural, sparse and intense crop and analyze them to precipitation in violin plot and bar plot."
+    },
+    {
+        "title": "DSC 106 Bike Watching Map",
+        "year": "2026",
+        "image": "images/bikewatching.png",
+        "description": "This interactive map shows the change of bike traffic in Boston and Cambridge areas in one day. Points' size indicate the number of trips and color indicates the depatures and arrivals extends. People can change the 'Filter by time' slide to see the change of distribution of bike traffic at different time of day."
+    },
+    {
         "title": "MATH 189 Project",
         "year": "2026",
         "image": "images/scatterplot_predictors_vs_crim.png",

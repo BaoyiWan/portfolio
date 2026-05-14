@@ -134,10 +134,12 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
 	  const imagePath = base + project.image; //different environment for base and github page
     article.innerHTML = `
       <${headingLevel}>${project.title}</${headingLevel}>
-      
       <img src="${imagePath}" alt="${project.title}">
       <p>${project.description}</p>
     `;
+
+    //<a href="${project.url}" target="_blank" rel="noopener noreferrer"></a>
+
     //${project.year ? `<p>${project.year}</p>` : ''}
     if (project.year) {
       const years = document.createElement('p');
